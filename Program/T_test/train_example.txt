@@ -1,0 +1,45 @@
+The dataset consists of image/metadata files, and annotations.
+Each annotation file (train.jsonl, val.jsonl, and test.jsonl) is a jsonl file, where each line is a JSON object.
+The test file has the labels removed, to preserve the integrity of the leaderboard.
+
+
+Here are the important things from the annotations:
+{
+  "objects": ["person", "person", "person", "car"],  # a list of objects detected
+  # the filename of the image, within the vcr1images directory.
+  "img_fn": "lsmdc_3015_CHARLIE_ST_CLOUD/3015_CHARLIE_ST_CLOUD_00.23.57.935-00.24.00.783@0.jpg",
+  # the json metadata file for the image, within the vcr1images directory.
+  "metadata_fn": "lsmdc_3015_CHARLIE_ST_CLOUD/3015_CHARLIE_ST_CLOUD_00.23.57.935-00.24.00.783@0.json",
+  # Tokenized version of the question. Detection tags are represented as lists, where 2 is indexes (starting at 0) into objects.
+  "question": ["Does", [2], "feel", "comfortable", "?"],
+  # A list of four answer choices, with the same format as question.
+  "answer_choices": [
+    ["Yes", "because", "the", "person", "sitting", "next", "to", "her", "is", "smiling", "."],
+    ["No", "she", "does", "not", "."],
+    ["Yes", ",", "she", "is", "wearing", "something", "with", "thin", "straps", "."],
+    ["Yes", ",", "she", "is", "cold", "."]],
+    # Which answer (0 to 3) is right in answer_choices.
+  "answer_label": 1,
+  # A list of four rationale choices, with the same format as question.
+  "rationale_choices": [
+    ["There", "is", "snow", "on", "the", "ground", ",", "and", "she", "is", "wearing", "a", "coat", "and", "hate", "."],
+    ["She", "is", "standing", "with", "her", "arms", "crossed", "and", "looks", "disturbed", "."],
+    ["She", "is", "sitting", "very", "rigidly", "and", "tensely", "on", "the", "edge", "of", "the", "bed", ".", "her", "posture", "is", "not", "relaxed", "and", "her", "face", "looks", "serious", "."],
+    [[2], "is", "laying", "in", "bed", "but", "not", "sleeping", ".", "she", "looks", "sad", "and", "is", "curled", "into", "a", "ball", "."]],
+  "rationale_label": 1,
+  "movie": "3015_CHARLIE_ST_CLOUD",
+  "interesting_scores": [0], "answer_likelihood": "possible",
+  "answer_orig": "No she does not",
+  "question_orig": "Does 3 feel comfortable?",
+  "rationale_orig": "She is standing with her arms crossed and looks disturbed",
+  "answer_match_iter": [3, 0, 2, 1],
+  "answer_sources": [3287, 0, 10184, 2260],
+  "rationale_sources": [1921, 0, 9750, 25743],
+  "rationale_match_iter": [3, 0, 2, 1],
+  # Which rationale (0 to 3) is right in rationale_choices.
+  "img_id": "train-0",
+  "question_number": 0,
+  "annot_id": "train-0",
+  "match_fold": "train-0",
+  "match_index": 0
+}

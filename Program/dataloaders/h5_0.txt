@@ -1,0 +1,24 @@
+{
+'answer_answer0': <HDF5 dataset "answer_answer0": shape (11, 768), type "<f2">),
+'answer_answer1': <HDF5 dataset "answer_answer1": shape (5, 768), type "<f2">),
+'answer_answer2': <HDF5 dataset "answer_answer2": shape (10, 768), type "<f2">),
+'answer_answer3': <HDF5 dataset "answer_answer3": shape (6, 768), type "<f2">),
+'ctx_answer0': <HDF5 dataset "ctx_answer0": shape (5, 768), type "<f2">),
+'ctx_answer1': <HDF5 dataset "ctx_answer1": shape (5, 768), type "<f2">)
+'ctx_answer2': <HDF5 dataset "ctx_answer2": shape (5, 768), type "<f2">),
+'ctx_answer3': <HDF5 dataset "ctx_answer3": shape (5, 768), type "<f2">)]
+}
+
+ grp_items[f'ctx_{self.mode}{condition_key}{i}']
+ bert_embs——grp_items['ctx_answer0']
+ tokenized_sent——item['question']:['Does', [2], 'feel', 'comfortable', '?']
+ old_det_to_new_ind: [-1, -1, 1, -1]
+ obj_to_type——item['objects']: ['person', 'person', 'person', 'car']
+ pad_ind = 0
+ GENDER_NEUTRAL_NAMES = ['Casey', 'Riley', 'Jessie', 'Jackie', 'Avery', 'Jaime', 'Peyton', 'Kerry', 'Jody', 'Kendall',
+                        'Peyton', 'Skyler', 'Frankie', 'Pat', 'Quinn']
+ [Token(x[0]) for x in new_tokenization_with_tags]
+    [Does, Riley, feel, comfortable, ?]
+[x[1] for x in new_tokenization_with_tags]
+    [0, 1, 0, 0, 0]
+questions_tokenized = {tokens, bert_embs, padding_value}

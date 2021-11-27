@@ -1,0 +1,21 @@
+{
+    "movie": "3042_KARATE_KID",
+    "objects": ["person", "person", "person", "person", "person", "person", "person", "person", "person", "person", "person", "person", "person", "person", "person", "person", "person", "person", "person", "person"],
+    "img_fn": "lsmdc_3042_KARATE_KID/3042_KARATE_KID_02.01.03.657-02.01.12.044@0.jpg",
+    "metadata_fn": "lsmdc_3042_KARATE_KID/3042_KARATE_KID_02.01.03.657-02.01.12.044@0.json",
+    "question": ["What", "is", [0], "doing", "here", "?"],
+    "answer_choices": [
+        [[0], "is", "holding", "an", "international", "press", "conference", "."],
+        [[0], "is", "competing", "in", "an", "athletic", "event", "."],
+        [[0], "came", "here", "to", "tell", "something", "to", [0], "."],
+        [[0], "is", "working", "as", "a", "police", "office", "."]],
+    "rationale_choices": [
+        [[0], "appears", "to", "be", "completing", "a", "flip", "with", "a", "crowd", "of", "people", "behind", "him", "."],
+        [[1], "is", "facing", "the", "pole", ",", "his", "body", "is", "leaning", "forward", "and", "his", "legs", "are", "in", "a", "running", "position", "."],
+        [[0], "is", "wearing", "a", "martial", "arts", "uniform", ",", "and", "there", "is", "a", "crowd", "behind", "him", "watching", "."],
+        [[7], "is", "wearing", "a", "gi", "and", "has", "a", "stance", "like", "he", "is", "fighting", "."]],
+    "img_id": "test-0",
+    "question_number": 0,
+    "annot_id": "test-0",
+    "match_fold": "test-0",
+    "match_index": 0}
