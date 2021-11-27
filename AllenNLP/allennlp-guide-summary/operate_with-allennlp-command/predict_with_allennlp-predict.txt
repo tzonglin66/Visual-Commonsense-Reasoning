@@ -1,0 +1,1 @@
+allennlp predict model/allennlp_command/0/model.tar.gz data/movie_review/test.jsonl --include-package nlp_guide --predictor t_sentence_classifier

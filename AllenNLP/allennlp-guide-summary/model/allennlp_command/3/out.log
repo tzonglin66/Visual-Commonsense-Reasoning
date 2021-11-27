@@ -1,0 +1,215 @@
+2021-10-07 21:36:29,399 - INFO - allennlp.common.params - random_seed = 13370
+2021-10-07 21:36:29,399 - INFO - allennlp.common.params - numpy_seed = 1337
+2021-10-07 21:36:29,400 - INFO - allennlp.common.params - pytorch_seed = 133
+2021-10-07 21:36:29,407 - INFO - allennlp.common.checks - Pytorch version: 1.9.0+cpu
+2021-10-07 21:36:29,408 - INFO - allennlp.common.params - type = default
+2021-10-07 21:36:29,409 - INFO - allennlp.common.params - dataset_reader.type = t_classification-tsv
+2021-10-07 21:36:29,410 - INFO - allennlp.common.params - dataset_reader.max_instances = None
+2021-10-07 21:36:29,410 - INFO - allennlp.common.params - dataset_reader.manual_distributed_sharding = False
+2021-10-07 21:36:29,411 - INFO - allennlp.common.params - dataset_reader.manual_multiprocess_sharding = False
+2021-10-07 21:36:29,412 - INFO - allennlp.common.params - dataset_reader.tokenizer.type = pretrained_transformer
+2021-10-07 21:36:29,413 - INFO - allennlp.common.params - dataset_reader.tokenizer.model_name = bert-base-uncased
+2021-10-07 21:36:29,413 - INFO - allennlp.common.params - dataset_reader.tokenizer.add_special_tokens = True
+2021-10-07 21:36:29,414 - INFO - allennlp.common.params - dataset_reader.tokenizer.max_length = None
+2021-10-07 21:36:29,414 - INFO - allennlp.common.params - dataset_reader.tokenizer.tokenizer_kwargs = None
+2021-10-07 21:36:57,428 - INFO - allennlp.common.params - dataset_reader.token_indexers.bert.type = pretrained_transformer
+2021-10-07 21:36:57,428 - INFO - allennlp.common.params - dataset_reader.token_indexers.bert.token_min_padding_length = 0
+2021-10-07 21:36:57,429 - INFO - allennlp.common.params - dataset_reader.token_indexers.bert.model_name = bert-base-uncased
+2021-10-07 21:36:57,430 - INFO - allennlp.common.params - dataset_reader.token_indexers.bert.namespace = tags
+2021-10-07 21:36:57,430 - INFO - allennlp.common.params - dataset_reader.token_indexers.bert.max_length = None
+2021-10-07 21:36:57,431 - INFO - allennlp.common.params - dataset_reader.token_indexers.bert.tokenizer_kwargs = None
+2021-10-07 21:36:57,432 - INFO - allennlp.common.params - dataset_reader.max_tokens = 512
+2021-10-07 21:36:57,433 - INFO - allennlp.common.params - train_data_path = data/movie_review/train.tsv
+2021-10-07 21:36:57,435 - INFO - allennlp.common.params - vocabulary = <allennlp.common.lazy.Lazy object at 0x00000169C46DA3D0>
+2021-10-07 21:36:57,435 - INFO - allennlp.common.params - datasets_for_vocab_creation = None
+2021-10-07 21:36:57,436 - INFO - allennlp.common.params - validation_dataset_reader = None
+2021-10-07 21:36:57,436 - INFO - allennlp.common.params - validation_data_path = data/movie_review/dev.tsv
+2021-10-07 21:36:57,437 - INFO - allennlp.common.params - validation_data_loader = None
+2021-10-07 21:36:57,438 - INFO - allennlp.common.params - test_data_path = None
+2021-10-07 21:36:57,438 - INFO - allennlp.common.params - evaluate_on_test = False
+2021-10-07 21:36:57,439 - INFO - allennlp.common.params - batch_weight_key = 
+2021-10-07 21:36:57,440 - INFO - allennlp.common.params - data_loader.type = multiprocess
+2021-10-07 21:36:57,441 - INFO - allennlp.common.params - data_loader.batch_size = 8
+2021-10-07 21:36:57,441 - INFO - allennlp.common.params - data_loader.drop_last = False
+2021-10-07 21:36:57,442 - INFO - allennlp.common.params - data_loader.shuffle = True
+2021-10-07 21:36:57,443 - INFO - allennlp.common.params - data_loader.batch_sampler = None
+2021-10-07 21:36:57,443 - INFO - allennlp.common.params - data_loader.batches_per_epoch = None
+2021-10-07 21:36:57,444 - INFO - allennlp.common.params - data_loader.num_workers = 0
+2021-10-07 21:36:57,444 - INFO - allennlp.common.params - data_loader.max_instances_in_memory = None
+2021-10-07 21:36:57,445 - INFO - allennlp.common.params - data_loader.start_method = fork
+2021-10-07 21:36:57,445 - INFO - allennlp.common.params - data_loader.cuda_device = None
+2021-10-07 21:36:57,447 - INFO - allennlp.common.params - data_loader.quiet = False
+2021-10-07 21:36:57,448 - INFO - allennlp.common.params - data_loader.collate_fn = <allennlp.data.data_loaders.data_collator.DefaultDataCollator object at 0x00000169C315B460>
+2021-10-07 21:36:57,449 - INFO - tqdm - loading instances: 0it [00:00, ?it/s]
+2021-10-07 21:37:07,501 - INFO - tqdm - loading instances: 1196it [00:10, 132.43it/s]
+2021-10-07 21:37:11,124 - INFO - allennlp.common.params - data_loader.type = multiprocess
+2021-10-07 21:37:11,125 - INFO - allennlp.common.params - data_loader.batch_size = 8
+2021-10-07 21:37:11,126 - INFO - allennlp.common.params - data_loader.drop_last = False
+2021-10-07 21:37:11,126 - INFO - allennlp.common.params - data_loader.shuffle = True
+2021-10-07 21:37:11,127 - INFO - allennlp.common.params - data_loader.batch_sampler = None
+2021-10-07 21:37:11,127 - INFO - allennlp.common.params - data_loader.batches_per_epoch = None
+2021-10-07 21:37:11,128 - INFO - allennlp.common.params - data_loader.num_workers = 0
+2021-10-07 21:37:11,128 - INFO - allennlp.common.params - data_loader.max_instances_in_memory = None
+2021-10-07 21:37:11,129 - INFO - allennlp.common.params - data_loader.start_method = fork
+2021-10-07 21:37:11,130 - INFO - allennlp.common.params - data_loader.cuda_device = None
+2021-10-07 21:37:11,130 - INFO - allennlp.common.params - data_loader.quiet = False
+2021-10-07 21:37:11,131 - INFO - allennlp.common.params - data_loader.collate_fn = <allennlp.data.data_loaders.data_collator.DefaultDataCollator object at 0x00000169C315B460>
+2021-10-07 21:37:11,132 - INFO - tqdm - loading instances: 0it [00:00, ?it/s]
+2021-10-07 21:37:12,570 - INFO - allennlp.common.params - type = from_instances
+2021-10-07 21:37:12,571 - INFO - allennlp.common.params - min_count = None
+2021-10-07 21:37:12,571 - INFO - allennlp.common.params - max_vocab_size = None
+2021-10-07 21:37:12,572 - INFO - allennlp.common.params - non_padded_namespaces = ('*tags', '*labels')
+2021-10-07 21:37:12,572 - INFO - allennlp.common.params - pretrained_files = None
+2021-10-07 21:37:12,573 - INFO - allennlp.common.params - only_include_pretrained_words = False
+2021-10-07 21:37:12,573 - INFO - allennlp.common.params - tokens_to_add = None
+2021-10-07 21:37:12,574 - INFO - allennlp.common.params - min_pretrained_embeddings = None
+2021-10-07 21:37:12,575 - INFO - allennlp.common.params - padding_token = @@PADDING@@
+2021-10-07 21:37:12,575 - INFO - allennlp.common.params - oov_token = @@UNKNOWN@@
+2021-10-07 21:37:12,576 - INFO - allennlp.data.vocabulary - Fitting token dictionary from dataset.
+2021-10-07 21:37:12,577 - INFO - tqdm - building vocab: 0it [00:00, ?it/s]
+2021-10-07 21:37:12,791 - INFO - allennlp.common.params - model.type = t_simple_classifier
+2021-10-07 21:37:12,792 - INFO - allennlp.common.params - model.embedder.type = basic
+2021-10-07 21:37:12,793 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.type = pretrained_transformer
+2021-10-07 21:37:12,794 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.model_name = bert-base-uncased
+2021-10-07 21:37:12,794 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.max_length = None
+2021-10-07 21:37:12,795 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.sub_module = None
+2021-10-07 21:37:12,795 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.train_parameters = True
+2021-10-07 21:37:12,796 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.eval_mode = False
+2021-10-07 21:37:12,796 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.last_layer_only = True
+2021-10-07 21:37:12,797 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.override_weights_file = None
+2021-10-07 21:37:12,798 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.override_weights_strip_prefix = None
+2021-10-07 21:37:12,799 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.load_weights = True
+2021-10-07 21:37:12,800 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.gradient_checkpointing = None
+2021-10-07 21:37:12,801 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.tokenizer_kwargs = None
+2021-10-07 21:37:12,802 - INFO - allennlp.common.params - model.embedder.token_embedders.bert.transformer_kwargs = None
+2021-10-07 21:37:20,772 - CRITICAL - root - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "E:\Programs\Anaconda3\envs\nlp\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11002] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\connection.py", line 353, in connect
+    conn = self._new_conn()
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x00000169DE12EEB0>: Failed to establish a new connection: [Errno 11002] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\util\retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='cdn-lfs.huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/097417381d6c7230bd9e3557456d726de6e83245ec8b24f529f60198a67b203a (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000169DE12EEB0>: Failed to establish a new connection: [Errno 11002] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\modeling_utils.py", line 1139, in from_pretrained
+    resolved_archive_file = cached_path(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\file_utils.py", line 1329, in cached_path
+    output_path = get_from_cache(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\file_utils.py", line 1592, in get_from_cache
+    http_get(url_to_download, temp_file, proxies=proxies, resume_size=resume_size, headers=headers)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\file_utils.py", line 1439, in http_get
+    r = requests.get(url, stream=True, proxies=proxies, headers=headers)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='cdn-lfs.huggingface.co', port=443): Max retries exceeded with url: /bert-base-uncased/097417381d6c7230bd9e3557456d726de6e83245ec8b24f529f60198a67b203a (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x00000169DE12EEB0>: Failed to establish a new connection: [Errno 11002] getaddrinfo failed'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Programs\Anaconda3\envs\nlp\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "E:\Programs\Anaconda3\envs\nlp\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\Programs\Anaconda3\envs\nlp\Scripts\allennlp.exe\__main__.py", line 7, in <module>
+    sys.exit(run())
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\__main__.py", line 34, in run
+    main(prog="allennlp")
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\__init__.py", line 121, in main
+    args.func(args)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 111, in train_model_from_args
+    train_model_from_file(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 171, in train_model_from_file
+    return train_model(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 240, in train_model
+    model = _train_worker(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 457, in _train_worker
+    train_loop = TrainModel.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 589, in from_params
+    return retyped_subclass.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 623, in from_params
+    return constructor_to_call(**kwargs)  # type: ignore
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 727, in from_partial_objects
+    model_ = model.construct(vocab=vocabulary_, serialization_dir=serialization_dir)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\lazy.py", line 80, in construct
+    return self.constructor(**contructor_kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\lazy.py", line 64, in constructor_to_use
+    return self._constructor.from_params(  # type: ignore[union-attr]
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 589, in from_params
+    return retyped_subclass.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 621, in from_params
+    kwargs = create_kwargs(constructor_to_inspect, cls, params, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 199, in create_kwargs
+    constructed_arg = pop_and_construct_arg(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 307, in pop_and_construct_arg
+    return construct_arg(class_name, name, popped_params, annotation, default, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 341, in construct_arg
+    return annotation.from_params(params=popped_params, **subextras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 589, in from_params
+    return retyped_subclass.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 621, in from_params
+    kwargs = create_kwargs(constructor_to_inspect, cls, params, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 199, in create_kwargs
+    constructed_arg = pop_and_construct_arg(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 307, in pop_and_construct_arg
+    return construct_arg(class_name, name, popped_params, annotation, default, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 385, in construct_arg
+    value_dict[key] = construct_arg(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 341, in construct_arg
+    return annotation.from_params(params=popped_params, **subextras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 589, in from_params
+    return retyped_subclass.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 623, in from_params
+    return constructor_to_call(**kwargs)  # type: ignore
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\modules\token_embedders\pretrained_transformer_embedder.py", line 96, in __init__
+    self.transformer_model = cached_transformers.get(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\cached_transformers.py", line 114, in get
+    transformer = AutoModel.from_pretrained(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\models\auto\auto_factory.py", line 395, in from_pretrained
+    return model_class.from_pretrained(pretrained_model_name_or_path, *model_args, config=config, **kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\modeling_utils.py", line 1156, in from_pretrained
+    raise EnvironmentError(msg)
+OSError: Can't load weights for 'bert-base-uncased'. Make sure that:
+
+- 'bert-base-uncased' is a correct model identifier listed on 'https://huggingface.co/models'
+
+- or 'bert-base-uncased' is the correct path to a directory containing a file named one of pytorch_model.bin, tf_model.h5, model.ckpt.
+
+

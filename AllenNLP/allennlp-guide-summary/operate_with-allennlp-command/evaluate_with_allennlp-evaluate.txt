@@ -1,0 +1,1 @@
+allennlp evaluate model/allennlp_command/0/model.tar.gz data/movie_review/test.tsv --include-package nlp_guide

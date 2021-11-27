@@ -1,0 +1,97 @@
+2021-10-07 21:24:52,289 - INFO - allennlp.common.params - random_seed = 13370
+2021-10-07 21:24:52,289 - INFO - allennlp.common.params - numpy_seed = 1337
+2021-10-07 21:24:52,290 - INFO - allennlp.common.params - pytorch_seed = 133
+2021-10-07 21:24:52,296 - INFO - allennlp.common.checks - Pytorch version: 1.9.0+cpu
+2021-10-07 21:24:52,297 - INFO - allennlp.common.params - type = default
+2021-10-07 21:24:52,299 - INFO - allennlp.common.params - dataset_reader.type = t_classification-tsv
+2021-10-07 21:24:52,301 - INFO - allennlp.common.params - dataset_reader.max_instances = None
+2021-10-07 21:24:52,301 - INFO - allennlp.common.params - dataset_reader.manual_distributed_sharding = False
+2021-10-07 21:24:52,302 - INFO - allennlp.common.params - dataset_reader.manual_multiprocess_sharding = False
+2021-10-07 21:24:52,304 - INFO - allennlp.common.params - dataset_reader.tokenizer.type = pretrained_transformer
+2021-10-07 21:24:52,305 - INFO - allennlp.common.params - dataset_reader.tokenizer.model_name = bert_model
+2021-10-07 21:24:52,305 - INFO - allennlp.common.params - dataset_reader.tokenizer.add_special_tokens = True
+2021-10-07 21:24:52,306 - INFO - allennlp.common.params - dataset_reader.tokenizer.max_length = None
+2021-10-07 21:24:52,306 - INFO - allennlp.common.params - dataset_reader.tokenizer.tokenizer_kwargs = None
+2021-10-07 21:24:52,680 - CRITICAL - root - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Programs\Anaconda3\envs\nlp\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "E:\Programs\Anaconda3\envs\nlp\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\Programs\Anaconda3\envs\nlp\Scripts\allennlp.exe\__main__.py", line 7, in <module>
+    sys.exit(run())
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\__main__.py", line 34, in run
+    main(prog="allennlp")
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\__init__.py", line 121, in main
+    args.func(args)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 111, in train_model_from_args
+    train_model_from_file(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 171, in train_model_from_file
+    return train_model(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 240, in train_model
+    model = _train_worker(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 457, in _train_worker
+    train_loop = TrainModel.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 589, in from_params
+    return retyped_subclass.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 621, in from_params
+    kwargs = create_kwargs(constructor_to_inspect, cls, params, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 199, in create_kwargs
+    constructed_arg = pop_and_construct_arg(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 307, in pop_and_construct_arg
+    return construct_arg(class_name, name, popped_params, annotation, default, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 341, in construct_arg
+    return annotation.from_params(params=popped_params, **subextras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 589, in from_params
+    return retyped_subclass.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 621, in from_params
+    kwargs = create_kwargs(constructor_to_inspect, cls, params, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 199, in create_kwargs
+    constructed_arg = pop_and_construct_arg(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 307, in pop_and_construct_arg
+    return construct_arg(class_name, name, popped_params, annotation, default, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 341, in construct_arg
+    return annotation.from_params(params=popped_params, **subextras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 589, in from_params
+    return retyped_subclass.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 623, in from_params
+    return constructor_to_call(**kwargs)  # type: ignore
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\data\tokenizers\pretrained_transformer_tokenizer.py", line 66, in __init__
+    self.tokenizer = cached_transformers.get_tokenizer(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\cached_transformers.py", line 138, in get_tokenizer
+    tokenizer = transformers.AutoTokenizer.from_pretrained(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 523, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 416, in get_tokenizer_config
+    resolved_config_file = cached_path(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\file_utils.py", line 1329, in cached_path
+    output_path = get_from_cache(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\file_utils.py", line 1499, in get_from_cache
+    r = requests.head(url, headers=headers, allow_redirects=False, proxies=proxies, timeout=etag_timeout)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\api.py", line 102, in head
+    return request('head', url, **kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\connectionpool.py", line 696, in urlopen
+    self._prepare_proxy(conn)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\connectionpool.py", line 964, in _prepare_proxy
+    conn.connect()
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\connection.py", line 359, in connect
+    conn = self._connect_tls_proxy(hostname, conn)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\connection.py", line 500, in _connect_tls_proxy
+    return ssl_wrap_socket(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\ssl.py", line 997, in _create
+    raise ValueError("check_hostname requires server_hostname")
+ValueError: check_hostname requires server_hostname

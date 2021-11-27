@@ -1,0 +1,1 @@
+1. 执行pip install allennlp前，关闭代理设置

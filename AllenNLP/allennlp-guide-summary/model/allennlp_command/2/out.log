@@ -1,0 +1,88 @@
+2021-10-07 21:27:12,268 - INFO - allennlp.common.params - random_seed = 13370
+2021-10-07 21:27:12,268 - INFO - allennlp.common.params - numpy_seed = 1337
+2021-10-07 21:27:12,269 - INFO - allennlp.common.params - pytorch_seed = 133
+2021-10-07 21:27:12,276 - INFO - allennlp.common.checks - Pytorch version: 1.9.0+cpu
+2021-10-07 21:27:12,276 - INFO - allennlp.common.params - type = default
+2021-10-07 21:27:12,279 - INFO - allennlp.common.params - dataset_reader.type = t_classification-tsv
+2021-10-07 21:27:12,280 - INFO - allennlp.common.params - dataset_reader.max_instances = None
+2021-10-07 21:27:12,281 - INFO - allennlp.common.params - dataset_reader.manual_distributed_sharding = False
+2021-10-07 21:27:12,282 - INFO - allennlp.common.params - dataset_reader.manual_multiprocess_sharding = False
+2021-10-07 21:27:12,283 - INFO - allennlp.common.params - dataset_reader.tokenizer.type = pretrained_transformer
+2021-10-07 21:27:12,283 - INFO - allennlp.common.params - dataset_reader.tokenizer.model_name = bert_model
+2021-10-07 21:27:12,284 - INFO - allennlp.common.params - dataset_reader.tokenizer.add_special_tokens = True
+2021-10-07 21:27:12,284 - INFO - allennlp.common.params - dataset_reader.tokenizer.max_length = None
+2021-10-07 21:27:12,285 - INFO - allennlp.common.params - dataset_reader.tokenizer.tokenizer_kwargs = None
+2021-10-07 21:27:15,414 - CRITICAL - root - Uncaught exception
+Traceback (most recent call last):
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\configuration_utils.py", line 497, in get_config_dict
+    resolved_config_file = cached_path(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\file_utils.py", line 1329, in cached_path
+    output_path = get_from_cache(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\file_utils.py", line 1500, in get_from_cache
+    r.raise_for_status()
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\requests\models.py", line 953, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/bert_model/resolve/main/config.json
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Programs\Anaconda3\envs\nlp\lib\runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "E:\Programs\Anaconda3\envs\nlp\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "E:\Programs\Anaconda3\envs\nlp\Scripts\allennlp.exe\__main__.py", line 7, in <module>
+    sys.exit(run())
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\__main__.py", line 34, in run
+    main(prog="allennlp")
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\__init__.py", line 121, in main
+    args.func(args)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 111, in train_model_from_args
+    train_model_from_file(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 171, in train_model_from_file
+    return train_model(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 240, in train_model
+    model = _train_worker(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\commands\train.py", line 457, in _train_worker
+    train_loop = TrainModel.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 589, in from_params
+    return retyped_subclass.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 621, in from_params
+    kwargs = create_kwargs(constructor_to_inspect, cls, params, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 199, in create_kwargs
+    constructed_arg = pop_and_construct_arg(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 307, in pop_and_construct_arg
+    return construct_arg(class_name, name, popped_params, annotation, default, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 341, in construct_arg
+    return annotation.from_params(params=popped_params, **subextras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 589, in from_params
+    return retyped_subclass.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 621, in from_params
+    kwargs = create_kwargs(constructor_to_inspect, cls, params, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 199, in create_kwargs
+    constructed_arg = pop_and_construct_arg(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 307, in pop_and_construct_arg
+    return construct_arg(class_name, name, popped_params, annotation, default, **extras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 341, in construct_arg
+    return annotation.from_params(params=popped_params, **subextras)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 589, in from_params
+    return retyped_subclass.from_params(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\from_params.py", line 623, in from_params
+    return constructor_to_call(**kwargs)  # type: ignore
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\data\tokenizers\pretrained_transformer_tokenizer.py", line 66, in __init__
+    self.tokenizer = cached_transformers.get_tokenizer(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\allennlp\common\cached_transformers.py", line 138, in get_tokenizer
+    tokenizer = transformers.AutoTokenizer.from_pretrained(
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 529, in from_pretrained
+    config = AutoConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\models\auto\configuration_auto.py", line 446, in from_pretrained
+    config_dict, _ = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "E:\Programs\Anaconda3\envs\nlp\lib\site-packages\transformers\configuration_utils.py", line 517, in get_config_dict
+    raise EnvironmentError(msg)
+OSError: Can't load config for 'bert_model'. Make sure that:
+
+- 'bert_model' is a correct model identifier listed on 'https://huggingface.co/models'
+
+- or 'bert_model' is the correct path to a directory containing a config.json file
+
+

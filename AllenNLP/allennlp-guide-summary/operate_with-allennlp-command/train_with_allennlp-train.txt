@@ -1,0 +1,1 @@
+allennlp train configs/t_config.jsonnet --serialization-dir model/allennlp_command/0 --include-package nlp_guide

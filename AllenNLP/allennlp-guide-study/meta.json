@@ -1,0 +1,20 @@
+{
+    "courseId": "allennlp-intro-guide",
+    "title": "A Guide to Natural Language Processing With AllenNLP",
+    "description": "In this guide, we'll walk through the basics of using AllenNLP, describing all of the main abstractions used and how to build various kinds of models.",
+    "siteUrl": "https://allennlp.org/",
+    "twitter": "ai2_allennlp",
+    "googleAnalyticsId": "UA-105970043-4",
+    "juniper": {
+        "repo": "allenai/allennlp-guide",
+        "branch": "master",
+        "lang": "python",
+        "kernelType": "python3",
+        "debug": true
+    },
+    "headerLinks": [
+        { "text": "Edit on GitHub", "url": "https://github.com/allenai/allennlp-guide" },
+        { "text": "AllenNLP Website", "url": "https://allennlp.org/" },
+        { "text": "AllenNLP Docs", "url": "https://docs.allennlp.org/master/" }
+    ]
+}
